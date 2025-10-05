@@ -5,6 +5,6 @@ const newRouter = Router()
 
 newRouter.get("/", (req, res) => res.render("form"))
 
-newRouter.post("/", newController.postNewMessage())
+newRouter.post("/", newController)
 
-module.exports = { newRouter }
+module.exports = newRouter

@@ -1,7 +1,9 @@
+require("dotenv").config()
+
 const path = require("node:path")
 const express = require("express")
-const { indexRouter } = require("./routes/indexRouter")
-const { newRouter } = require("./routes/newRouter")
+const indexRouter = require("./routes/indexRouter")
+const newRouter = require("./routes/newRouter")
 
 const app = express()
 const PORT = process.env.DB_PORT || 5000

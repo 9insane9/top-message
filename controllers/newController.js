@@ -1,10 +1,10 @@
 const db = require("../db/queries")
 
 module.exports = async function postNewMessage(req, res) {
-  const { user, message } = req.body
+  const { messageUser, messageText } = req.body
 
   try {
-    await db.postMessage(user, message)
+    await db.postMessage(messageUser, messageText)
     res.redirect("/")
   } catch (err) {
     console.error(err)

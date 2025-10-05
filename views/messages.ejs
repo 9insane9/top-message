@@ -1,11 +1,12 @@
 <ul class="messageContainer">
-  <% messages.forEach(message => { %>
+  <% rows.forEach(message => { %>
+
   <li class="message">
-    <div class=".meta">
-      <span><%=message.user%></span>
-      <span><%=message.added%></span>
+    <div class="meta">
+      <span><%=message.message_user%></span>
+      <span><%=message.date%></span>
     </div>
-    <p class="messageText"><%= message.text %></p>
+    <p class="messageText"><%= message.message_text %></p>
   </li>
   <% }) %>
 </ul>
