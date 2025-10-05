@@ -6,7 +6,7 @@ const indexRouter = require("./routes/indexRouter")
 const newRouter = require("./routes/newRouter")
 
 const app = express()
-const PORT = process.env.DB_PORT || 5000
+const PORT = process.env.PORT || 5000
 
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
